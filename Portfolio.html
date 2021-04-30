@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Proj Gallery-->
+<div id="gal"  onclick="closefunction()" class="proj_gal">
+    <img id="1" class="pics_gal" src="images/1.png" alt="">
+    <img id="2" class="pics_gal" src="images/2.png" alt="">
+    <img id="3" class="pics_gal" src="images/3.png" alt="">
+    <img id="4" class="pics_gal" src="images/4.png" alt="">
+    <img id="5" class="pics_gal" src="images/7.png" alt="">
+    <img id="6" class="pics_gal" src="images/8.png" alt="">
+    <img id="7" class="pics_gal" src="images/9.png" alt="">
+    <img id="8" class="pics_gal" src="images/10.png" alt="">
+
+    <script>
+        function closefunction() {
+            var x = document.getElementById("gal");
+            var y = document.getElementById("black");
+            x.style.display = "none";
+            y.style.display = "none";
+        }
+    </script>
+    
+</div>
+<div id="black" class="gallery">
+    
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Handojo Portfolio</title>
+    
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="icon" href="logo/AH.png" type="image/gif" sizes="16x16">
+    
+    
+</head>
+
+<!-- Menu -->
+<div class="dropdown">
+    <button class="dropbtn">AH</button>
+    <div class="dropdown-content">
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+</div>
+<img class="AH" src="logo/AH.png" alt="">
+<body>
+
+<!-- Welcome -->
+    <div class="welcome">
+        <p class="wlcm1">Hi There!</p>
+        <p class="wlcm2">Welcome To Austin's Portfolio</p>
+        <p class="wlcm3">Front-End Developer</p>
+        <p class="wlcm3">Web Designer</p>
+
+    </div>
+
+<!-- Projects -->
+    <p class="P_text">Projects</p>
+    <ul class="list">
+        <li>Honest Mining</li>
+        <li>Purdue Keyframe Logo</li>
+        <li>Solar Chapter</li>
+      </ul>
+    <div id="projects" class="prjct">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="pics" src="images/1.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/2.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/3.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/4.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/7.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/8.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/9.png" ></div>
+                <div class="swiper-slide"><img class="pics" src="images/10.png" ></div>
+                ...
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            </div>
+
+
+            <script type="module">
+                import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+            </script>
+            
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                  pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                  },
+                });
+              </script>
+        </div>
+    </div>
+
+    <div class="proj_container">
+    <p>These are some of the stuff that I have worked on. From internships, projects, non-profit organization.</p>    
+            
+                <img id="HM" onclick="hm_gal()" class="proj_thumbnail" src="images/1.png" alt="">
+                <script>
+                    function hm_gal() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                        var x = document.getElementById("gal");
+                        var y = document.getElementById("black");
+                        var A = document.getElementById("1");
+                        var B = document.getElementById("2");
+                        var C = document.getElementById("3");
+                        var D = document.getElementById("4");
+                        var E = document.getElementById("5");
+                        var F = document.getElementById("6");
+                        var G = document.getElementById("7");
+                        var H = document.getElementById("8");
+                        
+
+                        x.style.display = "block";
+                        y.style.display = "block";
+                        A.style.display = "block";
+                        B.style.display = "block";
+                        C.style.display = "block";
+                        D.style.display = "block";
+                        E.style.display = "block";
+                        F.style.display = "none";
+                        G.style.display = "none";
+                        H.style.display = "none";
+                    }
+                </script>
+                <p class="proj_title">Honest Mining</p>
+                <p>I had an internship in a blockchain company called Honest Mining back in Jakarta, Indonesia. I was assigned to the front-end development team. Given the chance to use new tools for me back them like vue.js and sass has broaden my knowledge. I worked on on many different webpages from login pages, home page, account settings and more.</p>
+            
+            
+        
+        
+            
+            
+                <img id="PK" onclick="PK_gal()" class="proj_thumbnail" src="images/KF.png" alt="">
+                <script>
+                    function PK_gal() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                        var x = document.getElementById("gal");
+                        var y = document.getElementById("black");
+                        var A = document.getElementById("1");
+                        var B = document.getElementById("2");
+                        var C = document.getElementById("3");
+                        var D = document.getElementById("4");
+                        var E = document.getElementById("5");
+                        var F = document.getElementById("6");
+                        var G = document.getElementById("7");
+                        var H = document.getElementById("8");
+                        
+
+                        x.style.display = "block";
+                        y.style.display = "block";
+                        A.style.display = "none";
+                        B.style.display = "none";
+                        C.style.display = "none";
+                        D.style.display = "none";
+                        E.style.display = "none";
+                        F.style.display = "block";
+                        G.style.display = "none";
+                        H.style.display = "none";
+                    }
+                </script>
+                <p class="proj_title">Purdue Keyframe</p>
+                <p>This is a class project given to help the Purdue Polytechnic department make a logo for an article about keyframes. The logos I made were chosen to be the best in my class.</p>
+        
+            
+            
+                <img id="SC" onclick="SC_gal()" class="proj_thumbnail" src="images/SolarChapterLogo.png" alt="">
+                <script>
+                    function SC_gal() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                        var x = document.getElementById("gal");
+                        var y = document.getElementById("black");
+                        var A = document.getElementById("1");
+                        var B = document.getElementById("2");
+                        var C = document.getElementById("3");
+                        var D = document.getElementById("4");
+                        var E = document.getElementById("5");
+                        var F = document.getElementById("6");
+                        var G = document.getElementById("7");
+                        var H = document.getElementById("8");
+                        
+
+                        x.style.display = "block";
+                        y.style.display = "block";
+                        A.style.display = "none";
+                        B.style.display = "none";
+                        C.style.display = "none";
+                        D.style.display = "none";
+                        E.style.display = "none";
+                        F.style.display = "none";
+                        G.style.display = "block";
+                        H.style.display = "block";
+                    }
+                </script>
+                <p class="proj_title">Solar Chapter</p>
+                <p>Solar Chapter is a non-profit organization that aims to helps villages in Indonesia that lacks access to education and water. I was part of the Art Design & Production team. I helped in making some posters and organizing events. </p>
+            
+        
+    </div>
+
+    
+
+    <p class="S_text">Skills</p>
+    <div id="skills" class="skll">
+        
+        <img class="logo" src="logo/html.png" alt="">
+        <img class="logo" src="logo/css3.svg" alt="">
+        <img class="logo" src="logo/sass.svg" alt="">
+        <img class="logo" src="logo/gitlab.png" alt="">
+        <img class="logo" src="logo/vue.png" alt="">
+        <img class="logo" src="logo/wordpress.png" alt="">
+        <img class="logo" src="logo/aftereffects.png" alt="">
+        <img class="logo" src="logo/photoshop.svg" alt="">
+        <img class="logo" src="logo/Bootstrap.png" alt="">
+
+    </div>
+
+<!-- About Me -->
+    <div id="about" class="abt">
+        <p class="abt_txt">About Me</p>
+        <img class="pc" src="images/pc.jpeg" alt="">
+        <p class="abt_par">
+            I am a 20 year-old Senior in Purdue University majoring in Web Development and Design.
+        </p>
+        <p class="abt_par">
+            Had an internship in Honest Mining Jakarta, Indonesia as a Front-End Web Developer.
+        </p>
+        <p class="abt_par">
+            I am most comfortable with Web Design and Front-End Programming.
+        </p>
+
+    </div>
+
+<!-- Contact -->
+    <div id="contact" class="contact">
+        <p class="cntct_txt">Contact</p>
+        <div class="me_pic"><img class="me" src="images/me.jpg" alt=""></div>
+        <p class="reach">Feel free to ask me anything.</p>
+        <p class="reach">Reach me here.</p>
+        <p class="email">Email: austinhandojo@gmail.com</p>
+        <img class="AH_bot" src="logo/AH.png" alt="">
+    </div>
+</body>
+</html>
